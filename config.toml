@@ -1,0 +1,7 @@
+title = "Martins Blog"
+languageCode = "en-us"
+theme = "pixyll"
+
+[indexes]
+  category = "categories"
+  tag = "tags"
