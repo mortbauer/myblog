@@ -5,4 +5,4 @@ title: "About"
 slug: "about"
 ---
 
-Few words about project.
+This is martin personal webblog.
