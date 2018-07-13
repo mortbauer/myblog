@@ -21,3 +21,4 @@ should basically work.
 5. mount the image `mount /dev/loop1p1 mnt`
 6. try to start a chroot using `systemd-nspawn --bind /lib64  --bind /usr/bin/qemu-arm-static -D mnt /bin/bash` as root. if it works you can add the boot option and see if that works as well
 
+On issues check the output of file mnt/bin/bash to see if you use the correct qemu
