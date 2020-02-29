@@ -1,7 +1,8 @@
 ---
 title: "Systemd Nspawn Raspbian"
 date: 2018-07-12T23:30:42+02:00
-draft: true
+draft: false
+tags: [linux, lxd, systemd-nspawn, qemu, raspberry, embedded]
 ---
 
 # use systemd-nspawn to boot raspbian image
@@ -22,3 +23,8 @@ should basically work.
 6. try to start a chroot using `systemd-nspawn --bind /lib64  --bind /usr/bin/qemu-arm-static -D mnt /bin/bash` as root. if it works you can add the boot option and see if that works as well
 
 On issues check the output of file mnt/bin/bash to see if you use the correct qemu
+
+## Update
+
+It seems that systemd-nspawn can despite all this not boot some images, the
+chroot however should work for all.

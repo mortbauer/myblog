@@ -1,0 +1,7 @@
+
+{
+  "scripts": {
+    "build": "rm -rf themes/pixyll;git clone https://github.com/azmelanar/hugo-theme-pixyll.git themes/pixyll && hugo -D --gc"
+  }
+}
+ 
